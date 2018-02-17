@@ -12,7 +12,7 @@ export default class Wrapper extends Component {
         return (
             <div className="container main-wrapper">
                 <div className="row">
-                <SidebarComponent selectedIndex={this.props.selectedIndex}/>
+                <SidebarComponent selectedIndex={this.props.selectedIndex} config={config}/>
                 <MainComponent components={components} config={config} setRoute={this.props.setRoute}/>
                 </div>
                 </div>

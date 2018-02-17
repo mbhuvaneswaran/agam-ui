@@ -1,4 +1,5 @@
 header{
+    padding: 10px;
     .header-logo{
         display: inline-block;
         border: 1px solid;
@@ -16,7 +17,15 @@ header{
             li{
                 display: inline-block;
                 font-weight: 500;
-                &.active{
+                a{
+                    color: white;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: none;
+                        color: white;
+                    }                    
+                }
+                &.active,&:hover{
                     position: relative;
                     &:after{
                         content: "";
@@ -24,7 +33,7 @@ header{
                         left: 25%;
                         right: 0;
                         bottom: 0;
-                        border-bottom: 1px solid;
+                        border-bottom: 1px solid red;
                         top: 30px;
                         text-align: center;
                         width: 30px;

@@ -8,7 +8,7 @@ export default class MainComponent extends Component {
     render() {
         let self = this;
         return (
-            <div className="col-md-10">
+            <div className="col-md-10 col-10">
                 {/* <Route path={'/'} render={(routeProps) => {
                                     let Component = this.props.components['About the band'].default
                                     return <Component {...routeProps} routeIndex={0} setRoute={this.setRoute}/>
@@ -17,7 +17,7 @@ export default class MainComponent extends Component {
                    {
                         this.props.config.headers.map((header,index) => {
                             return (
-                                <Route path={header.url} render={(routeProps) => {
+                                <Route path={header.url} key={index} render={(routeProps) => {
                                     let Component = this.props.components[header.title].default;
                                     return <Component {...routeProps} routeIndex={index} setRoute={self.setRoute.bind(self)}/>
                                     
