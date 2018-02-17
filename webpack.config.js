@@ -47,7 +47,7 @@ module.exports = {
       use : [
         {
           loader : 'css-loader',
-          options: {modules : true, importLoaders : 1}}]
+          }]
         }
       )},
       {
@@ -59,7 +59,6 @@ module.exports = {
           use: [
             {
               loader:'css-loader',
-              options : {modules : true,importLoaders : 1}
             }, {loader : 'sass-loader',options : {outputStyle : 'expanded'}}]
         })//ExtractTextPlugin.extract("style","css?localIdentName=[hash:base64:5]&modules&importLoaders=1!postcss-loader!sass?outputStyle=expanded")
       }
@@ -69,7 +68,7 @@ module.exports = {
     alias : {
       '@components' : path.join(__dirname,'./app/components'),
       '@data'  :path.join(__dirname,'./app/data'),
-      '@containers' : path.join(__dirname,'./app/containers')
+      '@containers' : path.join(__dirname,'./app/containers'),
     },
     // extensions listed here can be omitted in `import`s
     extensions: ['.js', '.jsx'],

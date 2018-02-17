@@ -1,11 +1,12 @@
 import React from 'react';
 import { render } from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.css';
-import './styles/app.scss';
+import globalStyles from './styles/app.scss';
 import MainContainer from '@containers/MainContainer';
-
+import config from '@data/config';
+import routes from './routes';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 const bootstrapApplication  = () => (
-    render(<MainContainer />,document.getElementById('app-container')));
+    render(<Router>{routes}</Router>,document.getElementById('app-container')));
 
 
 bootstrapApplication();
